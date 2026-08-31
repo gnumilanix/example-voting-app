@@ -9,10 +9,12 @@ spec:
   selector:
     matchLabels:
       app: vote
+      variant: pets
   template:
     metadata:
       labels:
         app: vote
+        variant: pets
     spec:
       containers:
       - image: dockersamples/examplevotingapp_vote
