@@ -25,5 +25,5 @@ spec:
         env:
         - name: OPTION_A
           value: "Cat"
-        - name: OPTION_A
+        - name: OPTION_B
           value: "Dog"
