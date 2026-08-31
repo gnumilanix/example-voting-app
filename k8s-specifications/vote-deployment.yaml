@@ -9,10 +9,12 @@ spec:
   selector:
     matchLabels:
       app: vote
+      variant: brands
   template:
     metadata:
       labels:
         app: vote
+        variant: brands
     spec:
       containers:
       - image: dockersamples/examplevotingapp_vote
@@ -20,3 +22,8 @@ spec:
         ports:
         - containerPort: 80
           name: vote
+        env:
+        - name: OPTION_A
+          value: "Garmin"
+        - name: OPTION_A
+          value: "OPTION_B"
