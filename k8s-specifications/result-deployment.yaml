@@ -22,8 +22,3 @@ spec:
         ports:
         - containerPort: 80
           name: result
-        env:
-        - name: OPTION_A
-          value: "Cat"
-        - name: OPTION_B
-          value: "Dog"
